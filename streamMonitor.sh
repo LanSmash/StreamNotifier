@@ -8,12 +8,12 @@
 # Will also check if the internet connection is alive or if the Twitch API is cooked.
 
 # Usage: Want to check on twitch.tv/riotgames, twitch.tv/b0aty, twitch.tv/lirik
-# ./streams.sh riotgames b0aty lirik
+# ./streamMonitor.sh riotgames b0aty lirik
 
 CONTACTS="someone@email.com,0435216###,someoneelse@email.com"
 if [ -z "$*" ]
 then
-	echo "Need some streams to look for. Eg: './streams.sh riotgames summit1g lirik'"
+	echo "Need some streams to look for. Eg: './streamMonitor.sh riotgames summit1g lirik'"
 	exit 0
 fi
 	for var in "$@"
